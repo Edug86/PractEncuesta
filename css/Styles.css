@@ -1,3 +1,7 @@
-.contenedor { 
-    background-color: #f5f
+h1 {
+    color: #3498db; /* Azul para el título principal */
+}
+
+h2 {
+    color: #2ecc71; /* Verde para el subtítulo */
 }
