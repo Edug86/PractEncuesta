@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuesta</title>
+    <title>Encuesta educativa</title>
     <link rel="stylesheet" href="/css/Styles.css">
 </head>
 <body>
     <div class="contenedor">
         <h1>Encuesta para estudiantes</h1>
         <h2>Por favor, responda las siguientes preguntas:</h2>
-        <form id="encuesta" class="formulario-encuesta"></form>
-        </form>
+        <form id="encuesta" class="formulario-encuesta">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="lastName">Apellido paterno:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="MothersLastName">Apellido materno:</label>
+            <input type="text" id="MothersLastName" name="MothersLastName" required><br><br>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="Edad" required><br><br>
+            <label for="Gender">Genero:</label>
+            <input type="text" id="Gender" name="Genero" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preguntas</legend>
+            <p>¿Cuál es tu sistema operativo preferido?</p>
+            <label><input type="radio" name="os" value="Windows" required> Windows</label><br>
+            <label><input type="radio" name="os" value="MacOS" required> MacOS</label><br>
+            <label><input type="radio" name="os" value="Linux" required> Linux</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Casillas de Verificación</legend>
+            <p>¿Qué tecnologías utilizas? (Selecciona todas las que correspondan): </p>
+            <label><input type="checkbox" name="tech" value="html"> HTML</label><br>
+            <label><input type="checkbox" name="tech" value="css"> CSS</label><br>
+            <label><input type="checkbox" name="tech" value="javascript"> JavaScript</label><br>
+            <label><input type="checkbox" name="tech" value="python"> Python</label><br>
+            <label><input type="checkbox" name="tech" value="java"> Java</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios Finales</legend>
+            <label for="comments">Escribe tus comentarios aquí:</label><br>
+            <textarea id="comments" name="comments" rows="7" cols="50"></textarea><br><br>
+        </fieldset>
+    </form>
     </div>
     
 </body>

@@ -1,7 +1,49 @@
 h1 {
-    color: #3498db; /* Azul para el título principal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0e507ca8; /* Azul para el título principal */
 }
 
 h2 {
-    color: #2ecc71; /* Verde para el subtítulo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #044068a8; /* Verde para el subtítulo */
+}
+.formulario-encuesta input[type="text"],
+.formulario-encuesta input[type="number"],
+.formulario-encuesta textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #c5bfbf;
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+    /* Transición: suaviza el color de borde, el fondo y la sombra */
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto cuando el usuario hace clic en el campo (Enfoque) */
+.formulario-encuesta input[type="text"]:focus,
+.formulario-encuesta input[type="number"]:focus,
+.formulario-encuesta textarea:focus {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #427fc0; /* Azul */
+    background-color: #f7faff; /* Fondo sutilmente azulado */
+    box-shadow: 0 0 8px rgba(69, 126, 187, 0.25); /* Resaltado azulado */
+}
+body {
+    /* TIPOGRAFÍA: de los títulos */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;              /* Tamaño de lectura*/
+    line-height: 1.6;             /* Espaciado entre líneas para diferenciar entre teto y texto*/
+    
+    /* COLORES: gris claro y texto gris oscuro */
+    background-color: #f4f7f6;    /* Fondo para resaltar el formulario*/
+    color: #4a4a4a;               /* Gris oscuro */
+    
+    /* ESPACIADO: Centra el contenido de la pantalla */
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
